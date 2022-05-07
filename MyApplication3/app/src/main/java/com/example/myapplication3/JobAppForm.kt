@@ -69,14 +69,13 @@ class JobAppForm : AppCompatActivity() {
 
     fun cargarMultiAutoCompleteTextView(){
         val multiAutoCompleteTextView = findViewById<MultiAutoCompleteTextView>(R.id.multiAutoCompleteTextView)
-        var suggestions = arrayOf("Ninguna","1 año","1 año +")
+        var suggestions = arrayOf("Leadership","Communication","Problem Solver","Time Managment")
         var adapter = ArrayAdapter(this,androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,suggestions)
         multiAutoCompleteTextView.threshold = 1
-       // multiAutoCompleteTextView.setTokenizer(multiAutoCompleteTextView.CommaTokenizer())
+        multiAutoCompleteTextView.setTokenizer(MultiAutoCompleteTextView.CommaTokenizer())
         multiAutoCompleteTextView.setAdapter(adapter)
-
-
     }
+
 }
 
 

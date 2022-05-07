@@ -14,8 +14,8 @@
             android:layout_height="wrap_content" android:id="@+id/checkedTextViewJa2"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.855"
-            app:layout_constraintVertical_bias="0.27"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.801"
+            app:layout_constraintVertical_bias="0.221"/>
     <CheckedTextView
             android:checkMark="?android:attr/listChoiceIndicatorMultiple"
             android:text="Junior Dev"
@@ -23,9 +23,9 @@
             android:layout_height="wrap_content" android:id="@+id/checkedTextJa1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.809"
+            app:layout_constraintHorizontal_bias="0.682"
             app:layout_constraintEnd_toStartOf="@+id/checkedTextViewJa2"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.27"/>
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.221"/>
     <TextView
             android:text="Professional Info"
             android:layout_width="wrap_content"
@@ -41,8 +41,8 @@
             android:layout_height="18dp" android:id="@+id/textView11"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.053"
-            app:layout_constraintVertical_bias="0.265"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintVertical_bias="0.217"/>
     <Button
             android:text="Save"
             android:layout_width="wrap_content"
@@ -52,86 +52,73 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent"/>
     <AutoCompleteTextView
-            android:layout_width="213dp"
+            android:layout_width="250dp"
             android:layout_height="42dp" android:id="@+id/autoCompleteTextView"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.585"
-            app:layout_constraintVertical_bias="0.119"/>
-    <TextView
-            android:text="Experience"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView13"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.046"
-            app:layout_constraintVertical_bias="0.147"/>
-    <TextView
-            android:text="Soft Skills"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.045"
-            app:layout_constraintVertical_bias="0.394"/>
+            app:layout_constraintVertical_bias="0.119" android:hint="Experience"/>
+
     <MultiAutoCompleteTextView
-            android:layout_width="207dp"
-            android:layout_height="37dp" android:id="@+id/multiAutoCompleteTextView"
+            android:layout_width="250dp"
+            android:layout_height="42dp" android:id="@+id/multiAutoCompleteTextView"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.598"
-            app:layout_constraintVertical_bias="0.377"/>
-    <TextView
-            android:text="Salary $"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView5"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.056"
-            app:layout_constraintVertical_bias="0.512"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintVertical_bias="0.325" android:hint="Soft Skills"/>
+
     <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
             android:inputType="numberDecimal"
             android:ems="10"
             android:id="@+id/editTextNumberDecimal"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.606"/>
-    <TextView
-            android:text="Salary ₡"
-            android:layout_width="53dp"
-            android:layout_height="21dp" android:id="@+id/textView7"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.622"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.05"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintVertical_bias="0.42" android:hint="Salary $ "/>
     <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
             android:inputType="number"
             android:ems="10"
             android:id="@+id/editTextNumber"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.606"
-            app:layout_constraintVertical_bias="0.625"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintVertical_bias="0.518" android:hint="Salary ₡"/>
     <EditText
-            android:layout_width="211dp"
-            android:layout_height="73dp"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
             android:inputType="textMultiLine"
             android:gravity="start|top"
             android:ems="10"
             android:id="@+id/editTextTextMultiLine"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.61"
-            app:layout_constraintVertical_bias="0.8"/>
-    <TextView
-            android:text="Comments"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView9"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.058" app:layout_constraintVertical_bias="0.752"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintVertical_bias="0.609" android:hint="Comments"/>
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:hint="Deductions"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:id="@+id/editTextNumberSigned"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintVertical_bias="0.708"/>
+    <EditText
+            android:layout_width="250dp"
+            android:layout_height="42dp"
+            android:inputType="time"
+            android:hint="Schedule"
+            android:ems="10"
+            android:id="@+id/editTextTime2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.614"
+            app:layout_constraintVertical_bias="0.806"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

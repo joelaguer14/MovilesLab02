@@ -5,6 +5,93 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".InterviewForm">
+        tools:context=".InterviewForm"
+        android:background="#AFD3DC" android:id="@+id/textLayoutName">
+    <TextView
+            android:text="Personal Info"
+            android:layout_width="219dp"
+            android:layout_height="60dp" android:id="@+id/textView16"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            android:textStyle="bold"
+            android:textSize="32dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:hint="Name" app:layout_constraintVertical_bias="0.201"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" android:id="@+id/textInputLayout">
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="350dp"
+                android:layout_height="52dp"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/editTextTextName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintVertical_bias="0.319"
+            android:hint="Id"/>
+    <EditText
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editTextTextPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:hint="Password"
+            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintVertical_bias="0.416"/>
+    <EditText
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editTextTextEmailAddress"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:hint="E-mail"
+            app:layout_constraintHorizontal_bias="0.508" app:layout_constraintVertical_bias="0.515"/>
+    <EditText
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editTextPhone"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.477" app:layout_constraintVertical_bias="0.625"
+            android:hint="Phone"/>
+    <EditText
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/editTextTextPostalAddress"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.726"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:hint="Address" app:layout_constraintHorizontal_bias="0.508"/>
+    <EditText
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editTextDate"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.477" app:layout_constraintVertical_bias="0.817"
+            android:hint="Start date"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,16 +10,16 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.MyApplication3">
         <activity
-                android:name=".InterviewForm"
+                android:name=".Login"
                 android:exported="true"/>
         <activity
-                android:name=".JobAppForm"
+                android:name=".InterviewForm"
                 android:exported="true"/>
         <activity
                 android:name=".MenuJopApp"
                 android:exported="true"/>
         <activity
-                android:name=".Login"
+                android:name=".JobAppForm"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
