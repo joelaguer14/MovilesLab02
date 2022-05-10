@@ -13,15 +13,40 @@ class JobAppForm : AppCompatActivity() {
         val save =  findViewById<Button>(R.id.saveButton)
 
         save.setOnClickListener{
+            val name:String = intent.getStringExtra("name").toString()
+            val id:String = intent.getStringExtra("id").toString()
+            val password:String = intent.getStringExtra("password").toString()
+            val email:String = intent.getStringExtra("email").toString()
+            val phone:String = intent.getStringExtra("phone").toString()
+            val address:String = intent.getStringExtra("address").toString()
+            val startDate:String = intent.getStringExtra("startDate").toString()
+            val experience =  findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView).text.toString()
+            val position =  findViewById<CheckedTextView>(R.id.checkedTextJa1).text.toString() + findViewById<CheckedTextView>(R.id.checkedTextViewJa2).text.toString()
+            val softSkills =  findViewById<MultiAutoCompleteTextView>(R.id.multiAutoCompleteTextView).text.toString()
+            val salaryDollars =  findViewById<EditText>(R.id.editTextNumberDecimal).text.toString()
+            val salaryColones =  findViewById<EditText>(R.id.editTextNumber).text.toString()
+            val comments =  findViewById<EditText>(R.id.editTextTextMultiLine).text.toString()
+            val deductions =  findViewById<EditText>(R.id.editTextNumberSigned).text.toString()
+            val startTime =  findViewById<EditText>(R.id.editTextTime2).text.toString()
+            val endTime =  findViewById<EditText>(R.id.editTextTime).text.toString()
+
+            var worker  = Worker (name= name,id=id, address = address, emailAddress = email,
+                phone=phone,position=position, startDate = startDate, password = password,
+                pinCode = "123",startTime = startTime,endTime = endTime, experience = experience, softSkills = softSkills,
+                salaryDollars = salaryDollars, salaryColones = salaryColones, comments = comments, deductions = deductions)
             val intent = Intent(this, Login::class.java)
+            intent.putExtra(Login.WORKER,worker)
             startActivity(intent)
+
         }
         cargarCheckedTextViews()
         cargarAutoCompleteTextView()
         cargarMultiAutoCompleteTextView()
+
+
     }
 
-    fun cargarCheckedTextViews(){
+    private fun cargarCheckedTextViews(){
         val checked1 = findViewById<CheckedTextView>(R.id.checkedTextJa1)
         val checked2 = findViewById<CheckedTextView>(R.id.checkedTextViewJa2)
         checked2.isChecked = !checked2.isChecked
@@ -57,7 +82,7 @@ class JobAppForm : AppCompatActivity() {
         }
     }
 
-    fun cargarAutoCompleteTextView(){
+    private fun cargarAutoCompleteTextView(){
         val autoCompleteTextView = findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView)
         var suggestions = arrayOf("Ninguna","1 año","1 año +")
         var adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,suggestions)
@@ -67,7 +92,7 @@ class JobAppForm : AppCompatActivity() {
 
     }
 
-    fun cargarMultiAutoCompleteTextView(){
+    private fun cargarMultiAutoCompleteTextView(){
         val multiAutoCompleteTextView = findViewById<MultiAutoCompleteTextView>(R.id.multiAutoCompleteTextView)
         var suggestions = arrayOf("Leadership","Communication","Problem Solver","Time Managment")
         var adapter = ArrayAdapter(this,androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,suggestions)

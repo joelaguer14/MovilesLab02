@@ -34,7 +34,8 @@ class MenuJopApp : AppCompatActivity() {
         tvdate.text = worker.startDate
 
         back.setOnClickListener{
-            val intent = Intent(this, Login::class.java)
+            val intent = Intent(this, InterviewForm::class.java)
+
             startActivity(intent)
         }
 

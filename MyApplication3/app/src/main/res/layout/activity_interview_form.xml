@@ -28,6 +28,7 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="350dp"
                 android:layout_height="52dp"
+                android:id="@+id/nameTxt"
         />
     </com.google.android.material.textfield.TextInputLayout>
     <EditText
@@ -36,7 +37,7 @@
             android:inputType="textPersonName"
             android:text=""
             android:ems="10"
-            android:id="@+id/editTextTextName"
+            android:id="@+id/idTxt"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.508"
@@ -47,7 +48,7 @@
             android:layout_height="52dp"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/passwordTxt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:hint="Password"
@@ -57,7 +58,7 @@
             android:layout_height="52dp"
             android:inputType="textEmailAddress"
             android:ems="10"
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/emailTxt"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:hint="E-mail"
@@ -67,7 +68,7 @@
             android:layout_height="52dp"
             android:inputType="phone"
             android:ems="10"
-            android:id="@+id/editTextPhone"
+            android:id="@+id/phoneTxt"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.477" app:layout_constraintVertical_bias="0.625"
@@ -77,7 +78,7 @@
             android:layout_height="52dp"
             android:inputType="textPostalAddress"
             android:ems="10"
-            android:id="@+id/editTextTextPostalAddress"
+            android:id="@+id/addressTxt"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.726"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
@@ -87,11 +88,19 @@
             android:layout_height="52dp"
             android:inputType="date"
             android:ems="10"
-            android:id="@+id/editTextDate"
+            android:id="@+id/startDateTxt"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.477" app:layout_constraintVertical_bias="0.817"
+            app:layout_constraintHorizontal_bias="0.475" app:layout_constraintVertical_bias="0.829"
             android:hint="Start date"/>
+    <Button
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/nextButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.939"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
