@@ -10,10 +10,8 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.MyApplication3">
         <activity
-                android:name=".Menu"
-                android:exported="true"
-                android:label="@string/title_activity_menu"
-                android:theme="@style/Theme.MyApplication3.NoActionBar"/>
+                android:name=".InterviewForm"
+                android:exported="true" />
         <activity
                 android:name=".Authenticator"
                 android:exported="true"/>
@@ -27,8 +25,10 @@
                 android:name=".MenuJopApp"
                 android:exported="true"/>
         <activity
-                android:name=".InterviewForm"
-                android:exported="true">
+                android:name=".Menu"
+                android:exported="true"
+                android:label="@string/title_activity_menu"
+                android:theme="@style/Theme.MyApplication3.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

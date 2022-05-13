@@ -1,5 +1,6 @@
 package com.example.myapplication3
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -57,10 +58,15 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-       // when(item.itemId){
+        when(item.itemId){
+            R.id.nav_home ->{
+                println("TESTT")
+                val i = Intent(this,InterviewForm::class.java)
+                startActivity(i)
+            }
 
-        //}
-        return false
+        }
+        return true
     }
 
 }
